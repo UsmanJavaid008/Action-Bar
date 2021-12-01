@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.widget;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -43,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_favorite:
                 Intent pickPhoto = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(pickPhoto , 1);
-
                 break;
             case R.id.action_tasks:
                 Toast.makeText(this, "Tasks", Toast.LENGTH_SHORT).show();
